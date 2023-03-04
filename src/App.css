@@ -1,38 +1,268 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App * {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+img.temp {
+  width: 100%;
+}
+
+/* Header */
+
+.App-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.Header_news-col {
+  margin: 1rem;
+  width: 80%;
+}
+
+.Header_widget-col {
+  margin: 1rem;
+  width: 20%;
+}
+
+/* .Header_widget-col img {
+  border-radius: 50%;
+} */
+
+.Header_widget img {
+  border-radius: 50%;
+}
+
+.News-col_news-tabs-list {
+  display: flex;
+  font-weight: bold;
+}
+
+.News-col_news-tabs-list li:nth-child(2n) {
+  margin: 0 1rem;
+}
+
+.News-col_news-tabs-list li:last-child {
+  margin-right: 0;
+}
+
+/* .News-col_news-tabs-list-item {
+
+} */
+
+.News-col_news-list {
   display: flex;
   flex-direction: column;
+}
+
+.News-col_news-list a {
+  color: black;
+}
+
+/* .News-col_news-list-item {
+
+} */
+
+.News-col_stocks-list {
+  display: flex;
+}
+
+.News-col_stocks-list a {
+  color: black;
+  font-weight: bold;
+}
+
+.News-col_stocks-list li {
+  /* width: 100%; */
+}
+
+.News-col_stocks-list li a {
+  margin-right: 5px;
+}
+
+.News-col_stocks-list li:last-child {
+  width: auto;
+}
+
+.News-col_stocks-list li:nth-child(2n) {
+  margin: 0 1rem;
+}
+
+.News-col_stocks-list li:last-child {
+  margin-right: 0;
+}
+
+/* .News-col_stocks-list-item {} */
+
+/* Main */
+
+.App-main {
+  /* display: flex;
+  flex-wrap: nowrap; */
+  margin: 1rem 0;
+}
+
+.Main_menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.Main_menu-list {
+  display: flex;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+/* .Main_menu-list-item {} */
+
+.Main_menu-list li:nth-child(2n) {
+  margin: 0 1rem;
+}
+
+.Main_menu-list li:last-child {
+  margin-right: 0;
+}
+
+/* .Main_menu-list li:first-child{
+  margin: 0 1rem;
+} */
+
+.Main_search-widget {
+  margin-right: 12.5%;
+  display: flex;
+}
+
+.Search-widget_logo {
+  width: 14.28%;
+  min-width: 150px;
+}
+
+.Search-widget_logo img {
+  width: 100%;
+  height: 50px;
+}
+
+.Search-widget_form-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 14.28%);
+}
+
+.Search-widget_form {
+  /* width: calc(100% - 14.28%); */
+  display: flex;
+  /* flex-wrap: nowrap; */
+  height: 50px;
+}
+
+.Search-widget_input {
+  width: calc(100% - 50px);
+  /* height: 50px; */
+}
+
+.Search-widget_button {
+  width: 100px;
+  /* height: 50px; */
+}
+
+/* Banner */
+.Banner-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.Banner-widget img {
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  /* max-width: 1200px; */
+}
+
+/* Footer */
+
+.App-footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  /* padding: 1rem; */
+}
+
+.Footer_widgets-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Footer_widget {
+  /* padding: 1rem; */
+  margin: 0 1rem;
+  /* width: 300px; */
+  width: calc(33.33% - 2rem);
+  height: 200px;
+}
+
+/* .Footer_widgets-container article:nth-child(2n) {
+margin-left: auto;
+margin-right: 0;
+}
+
+.Footer_widgets-container article:nth-child(2n+1) {
+  margin-left: 0;
+  margin-right: auto;
+} */
+
+/* .Footer_widgets-container article:last-child {
+  margin-right: 0;
+} */
+
+.Weather-widget p {
+  line-height: 1;
+  margin: 0;
+}
+
+.Weather-widget_content {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: space-between; */
 }
 
-.App-link {
-  color: #61dafb;
+.Weather-widget_content span { 
+  margin: 0 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TV-programm-widget_links-item span:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.TV-now-widget_links-item span:nth-child(2) {
+  margin: 0 1rem;
 }
